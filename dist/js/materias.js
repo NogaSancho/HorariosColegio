@@ -87,6 +87,107 @@ const materias= {
             semestre:"1"
             }
         }, 
+        {
+            "Journalism":{
+            letra:"C" ,
+            area: "Inglés",
+            semestre:"1"
+            }
+        }, 
+        {
+            "World Mythology":{
+            letra:"C" ,
+            area: "Inglés",
+            semestre:"1"
+            }
+        }, 
+        {
+            "AP Research":{
+            letra:"C" ,
+            area: "Inglés",
+            semestre:"1"
+            }
+        }, 
+        {
+            "Emprendimiento":{
+            letra:"D" ,
+            area: "Sociales",
+            semestre:"1"
+            }
+        }, 
+        {
+            "Actualidad Colombiana y Ciudadania":{
+            letra:"D" ,
+            area: "Sociales",
+            semestre:"1"
+            }
+        }, {
+            "Políticas Públicas & Gobierno":{
+            letra:"D" ,
+            area: "Sociales",
+            semestre:"1"
+            }
+        }, {
+            "International Relations (Pre AP)":{
+            letra:"D" ,
+            area: "Sociales",
+            semestre:"1"
+            }
+        }, {
+            "Economía Colombiana":{
+            letra:"D" ,
+            area: "Sociales",
+            semestre:"1"
+            }
+        }, 
+        {
+            "Portugués Intermedio I":{
+            letra:"E" ,
+            area: "Tercera Lengua",
+            semestre:"1"
+            }
+        }, 
+        {
+            "Francés Intermedio I":{
+            letra:"E" ,
+            area: "Tercera Lengua",
+            semestre:"1"
+            }
+        }, 
+        {
+            "Literatura & Cultura Hispanoamericanas (Pre AP)":{
+            letra:"F" ,
+            area: "Español",
+            semestre:"1"
+            }
+        }, 
+{
+            "Apreciación del Cine":{
+            letra:"F" ,
+            area: "Español",
+            semestre:"1"
+            }
+        }, {
+            "Fundamentos de la Filosofía":{
+            letra:"F" ,
+            area: "Español",
+            semestre:"1"
+            }
+        }, 
+        {
+            "Filosofía & Argumentación":{
+            letra:"F" ,
+            area: "Español",
+            semestre:"1"
+            }
+        }, 
+        {
+            "Literatura Colombiana":{
+            letra:"F" ,
+            area: "Español",
+            semestre:"1"
+            }
+        }, 
     ],
     materias11azul:[
         
