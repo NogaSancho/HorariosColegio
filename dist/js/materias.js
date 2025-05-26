@@ -67,10 +67,11 @@ const materias= {
             }
         }, 
         {
-            nombre:"Estadística" ,
+            "Estadística":{  
             letra:"B" ,
             area: "Matemáticas",
             semestre:"1"
+            }
         }, 
         {
             nombre:"Public Speaking and Leadership" ,
