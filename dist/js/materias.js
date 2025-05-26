@@ -74,16 +74,18 @@ const materias= {
             }
         }, 
         {
-            nombre:"Public Speaking and Leadership" ,
+            "Public Speaking and Leadership":{
             letra:"C" ,
             area: "Inglés",
             semestre:"1"
+            }
         }, 
         {
-            nombre:"AP English Literature and Composition" ,
+            "AP English Literature and Composition":{
             letra:"C" ,
             area: "Inglés",
             semestre:"1"
+            }
         }, 
         {
             nombre:"Journalism" ,
