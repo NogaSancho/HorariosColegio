@@ -1,4 +1,3 @@
-// Copilot please delete all the semestre:"1"
 const materias= {
     materias8vo: [
         {
@@ -291,6 +290,279 @@ const materias= {
             }
         },
     ],
+    materias11verde2:[
+        {
+            "AP Calculus":{
+            letra:"A" ,
+            area: "Matemáticas",
+            }
+        },{
+            "Estadística":{
+            letra:"A" ,
+            area: "Matemáticas",
+            }
+        },{
+            "Bioquímica Fundamental":{
+            letra:"A" ,
+            area: "Ciencias",
+            }
+        },{
+            "Ingeniería & Tecnología":{
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "AP Ciencias Ambientales":{
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "Química Avanzada":{
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "STEM":{
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "AP Physics":{
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "World Mythology":{
+            letra:"C" ,
+            area: "Inglés",
+            }
+        },{
+            "Media Production":{
+            letra:"C" ,
+            area: "Inglés",
+            }
+        },{
+            "AP English Literature and Composition":{
+            letra:"C" ,
+            area: "Inglés",
+            }
+        },{
+            "Public Speaking and Leadership":{
+            letra:"C" ,
+            area: "Inglés",
+            }
+        },{
+            "AP Research":{
+            letra:"C" ,
+            area: "Inglés",
+            }
+        },{
+            "Simbología e Historia":{
+            letra:"D" ,
+            area: "Sociales",
+            }
+        },{
+            "Actualidad Colombiana y Ciudadanía":{
+            letra:"D" ,
+            area: "Sociales",
+            }
+        },{
+            "AP Microeconomics":{
+            letra:"D" ,
+            area: "Sociales",
+            }
+        },{
+            "Políticas Públicas & Gobierno":{
+            letra:"D" ,
+            area: "Sociales",
+            }
+        },{
+            "AP Studio Art":{
+            letra:"E" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Teatro Clásico & Contemporáneo":{
+            letra:"E" ,
+            area: "?",
+            }
+        },{
+            "AP Computer Science A":{
+            letra:"E" ,
+            area: "Ciencias",
+            }
+        },{
+            "AP French Language and Culture":{
+            letra:"E" ,
+            area: "Tercera Lengua",
+            }
+        },{
+            "La Vida Como Experiencia Literaria":{
+            letra:"F" ,
+            area: "Español",
+            }
+        },{
+            "Periodismo":{
+            letra:"F" ,
+            area: "Español",
+            }
+        },{
+            "Fundamentos de la Filosofía":{
+            letra:"F" ,
+            area: "Español",
+            }
+        },{
+            "Literatura Autobiográfica":{
+            letra:"F" ,
+            area: "Español",
+            }
+        },{
+            "Ética":{ //Nota: Hay 3 éticas diferentes
+            letra:"G" ,
+            area: "Ética",
+            }
+        },{
+            "Gimnasia Mixta":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Entrenamiento Funcional Mixto":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Fútbol Femenino":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Baloncesto Femenino":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Voleibol Mixto":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Baloncesto Masculino":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Fútbol Masculino":{ //Nota: Hay 2 fútboles
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Orquesta Sinfónica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Trompetas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Clarinetes & Saxofones)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Flautas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 1":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 2":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Coro":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Danza":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "AP Music Theory":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ear Training (Pre AP)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Creación":{ //Nota: Hay 2 talleres de creación
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Cerámica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Escultura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Diseño Gráfico Digital":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Fundamentos de Diseño Industrial":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Pintura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Historia del Arte":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller MakerSpace":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "AP Studio Art":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Asamblea":{
+            letra:"J" ,
+            area: "Asamblea",
+            }
+        },{
+            "Consejería":{
+            letra:"K" ,
+            area: "Consejería",
+            }
+        },
+    ],
     materias11azul1:[
             {
             "STEM":{
@@ -526,6 +798,279 @@ const materias= {
             "Taller MakerSpace":{
             letra:"I" ,
             area: "Arte & Música",
+            }
+        },{
+            "Asamblea":{
+            letra:"J" ,
+            area: "Asamblea",
+            }
+        },{
+            "Consejería":{
+            letra:"K" ,
+            area: "Consejería",
+            }
+        },
+    ],
+    materias11azul2:[
+        {
+            "Calculus":{ 
+            letra:"A" ,
+            area: "Matemáticas",
+            }
+        },{
+            "AP Statistics":{ 
+            letra:"A" ,
+            area: "Matemáticas",
+            }
+        },{
+            "Ingeniería & Tecnología":{ 
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "Física Avanzada":{ 
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "AP Química":{ 
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "STEM":{ 
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "AP Computer Science Principles":{ 
+            letra:"B" ,
+            area: "Ciencias",
+            }
+        },{
+            "Actualidad Colombiana & Ciudadanía":{ 
+            letra:"C" ,
+            area: "Sociales",
+            }
+        },{
+            "Políticas Públicas & Gobierno":{ 
+            letra:"C" ,
+            area: "Sociales",
+            }
+        },{
+            "AP Macroeconomics":{ 
+            letra:"C" ,
+            area: "Sociales",
+            }
+        },{
+            "Emprendimiento":{ 
+            letra:"C" ,
+            area: "Sociales",
+            }
+        },{
+            "AP Comparative Government":{ 
+            letra:"C" ,
+            area: "Sociales",
+            }
+        },{
+            "Media Production":{ 
+            letra:"D" ,
+            area: "Inglés",
+            }
+        },{
+            "Writing the World Today":{ 
+            letra:"D" ,
+            area: "Inglés",
+            }
+        },{
+            "Drama and Poetry":{ 
+            letra:"D" ,
+            area: "Inglés",
+            }
+        },{
+            "Comparative Literature and Film":{ 
+            letra:"D" ,
+            area: "Inglés",
+            }
+        },{
+            "AP Psychology":{ 
+            letra:"E" ,
+            area: "Sociales",
+            }
+        },{
+            "Filosofía Política":{ 
+            letra:"E" ,
+            area: "?",
+            }
+        },{
+            "Portugués Lengua & Cultura":{ 
+            letra:"E" ,
+            area: "Tercera Lengua",
+            }
+        },{
+            "AP Spanish Literature and Culture":{ 
+            letra:"F" ,
+            area: "Español",
+            }
+        },{
+            "Periodismo":{ 
+            letra:"F" ,
+            area: "Español",
+            }
+        },{
+            "Fundamentos de la Filosofía":{ 
+            letra:"F" ,
+            area: "Español",
+            }
+        },{
+            "Literatura Colombiana":{ 
+            letra:"F" ,
+            area: "Español",
+            }
+        },{
+            "Ética":{ //Nota: Hay 3 éticas diferentes
+            letra:"G" ,
+            area: "Ética",
+            }
+        },{
+            "Gimnasia Mixta":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Entrenamiento Funcional Mixto":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Fútbol Femenino":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Baloncesto Femenino":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Voleibol Mixto":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Baloncesto Masculino":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Fútbol Masculino":{ //Nota: Hay 2 fútboles
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Orquesta Sinfónica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Trompetas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Clarinetes & Saxofones)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Flautas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 1":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 2":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Coro":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Danza":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "AP Music Theory":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ear Training (Pre AP)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Creación":{ //Nota: Hay 2 talleres de creación
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Cerámica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Escultura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Diseño Gráfico Digital":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Fundamentos de Diseño Industrial":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Pintura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Historia del Arte":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller MakerSpace":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Historia del Arte":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Asamblea":{
+            letra:"J" ,
+            area: "Asamblea",
+            }
+        },{
+            "Consejería":{
+            letra:"K" ,
+            area: "Consejería",
             }
         },
     ]
