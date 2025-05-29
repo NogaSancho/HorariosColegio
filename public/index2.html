@@ -3,37 +3,30 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="NogaSancho Devs">
     <meta name="generator" content="Astro v5.7.10">
     <title>Horario 🗿</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
-    <script src="./Bootstrap/js/color-modes.js"></script>
-    <link href="./Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./dist/css/style.css" rel="stylesheet">
+    <script src="../src/Bootstrap/js/color-modes.js"></script>
+    <link href="../src/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../src/style.css" rel="stylesheet">
 </head>
 
 <body>
     <main>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
-            <div class="container-fluid"> <a class="navbar-brand" href="#">Nuevo Horario 🗿🗿</a> <button
-                    class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-                    aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"> <span
-                        class="navbar-toggler-icon"></span> </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
-                    aria-labelledby="offcanvasNavbar2Label">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5> <button type="button"
-                            class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                </div>
+            <div class="container-fluid"> <a class="navbar-brand" href="#">Nuevo Horario 🗿🗿</a> 
             </div>
         </nav>
-        <div class="container my-5">
+        <div class="container my-5" id="root">
             <div class="bg-body-tertiary p-5 rounded">
-                <div class="row justify-content-center" id="root">
+                <div class="row justify-content-center">
                     <div class="col-md-3">
-                        <a class="nav-link">Año Horario:
+                        <a class="nav-link" style="text-align: center;">Año Horario:
                             <div class="input-group mb-3">
                                 <select class="form-select" id="inputGroupSelect01">
                                     <option selected>Elije el año actual...</option>
@@ -44,8 +37,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
-                        <a class="nav-link">Año Horario:
+                    <div class="col-md-3" id="Año-Horario">
+                        <a class="nav-link" style="text-align: center;">Año Horario:
                             <div class="input-group mb-3">
                                 <select class="form-select" id="inputGroupSelect01">
                                     <option selected>Elije el año actual...</option>
@@ -56,8 +49,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
-                        <a class="nav-link">Alumno:
+                    <div class="col-md-3" id="Alumno">
+                        <a class="nav-link" style="text-align: center;">Alumno:
                             <div class="input-group mb-3">
                                 <select class="form-select" id="inputGroupSelect01">
                                     <option selected>Elije tu nombre...</option>
@@ -68,8 +61,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
-                        <a class="nav-link" href="#">Grado Actual:
+                    <div class="col-md-3" id="Grado-Actual">
+                        <a class="nav-link" style="text-align: center;">Grado Actual:
                             <div class="input-group mb-3">
                                 <select class="form-select" id="inputGroupSelect01">
                                     <option selected>Elije tu Grado Actual...</option>
@@ -90,7 +83,7 @@
                         <p style="text-align: center;">Horario</p>
                         <div class="row" style="margin-left: 38%;">
                             <div class="col-sm-2">
-                                <div class="input-group">
+                                <div class="input-group" id="horario-verde">
                                     <div class="input-group-text">
                                         <input class="form-check-input mt-0" type="radio" value=""
                                             aria-label="Radio button for following text input">
@@ -100,7 +93,7 @@
                             </div>
 
                             <div class="col-sm-2">
-                                <div class="input-group">
+                                <div class="input-group" id="horario-azul">
                                     <div class="input-group-text">
                                         <input class="form-check-input mt-0" type="radio" value=""
                                             aria-label="Radio button for following text input">
@@ -110,113 +103,93 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6" id="materias-As">
+                            <div class="col-sm-14" id="materias-As">
                                 <div class="input-group mb-3">
                                     <label class="input-group-text" for="inputGroupSelect01">A</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra A  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-Bs">
                                     <label class="input-group-text" for="inputGroupSelect01">B</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra B  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-Cs">
                                     <label class="input-group-text" for="inputGroupSelect01">C</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra C  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-Ds">
                                     <label class="input-group-text" for="inputGroupSelect01">D</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra D  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3"   id="materias-Es">
                                     <label class="input-group-text" for="inputGroupSelect01">E</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra E  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3"   id="materias-Fs">
                                     <label class="input-group-text" for="inputGroupSelect01">F</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra F  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-Gs">
                                     <label class="input-group-text" for="inputGroupSelect01">G</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra G  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-Hs">
                                     <label class="input-group-text" for="inputGroupSelect01">H</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra H  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-Is">
                                     <label class="input-group-text" for="inputGroupSelect01">I</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra I  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-Js">
                                     <label class="input-group-text" for="inputGroupSelect01">J</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra J  --->
                                     </select>
                                 </div>
                             </div>
@@ -227,7 +200,7 @@
                         <p style="text-align: center;">Horario</p>
                         <div class="row" style="margin-left: 38%;">
                             <div class="col-sm-2">
-                                <div class="input-group">
+                                <div class="input-group" id="horario-verde">
                                     <div class="input-group-text">
                                         <input class="form-check-input mt-0" type="radio" value=""
                                             aria-label="Radio button for following text input">
@@ -237,7 +210,7 @@
                             </div>
 
                             <div class="col-sm-2">
-                                <div class="input-group">
+                                <div class="input-group" id="horario-azul">
                                     <div class="input-group-text">
                                         <input class="form-check-input mt-0" type="radio" value=""
                                             aria-label="Radio button for following text input">
@@ -248,113 +221,93 @@
 
                         </div>
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-A2s">
                                     <label class="input-group-text" for="inputGroupSelect01">A</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra A  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-B2s">
                                     <label class="input-group-text" for="inputGroupSelect01">B</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra B  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-C2s">
                                     <label class="input-group-text" for="inputGroupSelect01">C</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra C  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-D2s">
                                     <label class="input-group-text" for="inputGroupSelect01">D</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra D  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-E2s">
                                     <label class="input-group-text" for="inputGroupSelect01">E</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra E  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-F2s">
                                     <label class="input-group-text" for="inputGroupSelect01">F</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra F  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-G2s">
                                     <label class="input-group-text" for="inputGroupSelect01">G</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra G  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-H2s">
                                     <label class="input-group-text" for="inputGroupSelect01">H</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra H  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-I2s">
                                     <label class="input-group-text" for="inputGroupSelect01">I</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra I  --->
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-14">
                                 <div class="input-group mb-3" id="materias-J2s">
                                     <label class="input-group-text" for="inputGroupSelect01">J</label>
                                     <select class="form-select" id="inputGroupSelect01">
                                         <option selected>Elige la materia...</option>
-                                        <option value="1">Matematicas</option>
-                                        <option value="2">Algebra</option>
-                                        <option value="3">Geometria</option>
+                                        <!--- Materias de la letra J  --->
                                     </select>
                                 </div>
                             </div>
@@ -364,4 +317,4 @@
             </div>
         </div>
     </main>
-    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/Bootstrap/js/bootstrap.bundle.min.js"></script>
