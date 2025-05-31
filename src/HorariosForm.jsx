@@ -1,6 +1,7 @@
 import './Bootstrap/css/bootstrap.min.css';
 import './Bootstrap/js/bootstrap.bundle.min.js';
 import './Bootstrap/js/color-modes.js';
+import Materias from './materias.jsx';
 
 function HorariosForm() {
     return (
@@ -87,81 +88,61 @@ function HorariosForm() {
                             <div className="col-sm-14" id="materias-As">
                                 <div className="input-group mb-3">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">A</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Bs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">B</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Cs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">C</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Ds">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">D</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3"   id="materias-Es">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">E</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3"   id="materias-Fs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">F</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Gs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">G</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Hs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">H</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Is">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">I</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Js">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">J</label>
-                                    <select className="form-select" id="inputGroupSelect01">
-                                        <option defaultValue>Elige la materia...</option>
-                                    </select>
+                                    <Materias />
                                 </div>
                             </div>
                         </div>

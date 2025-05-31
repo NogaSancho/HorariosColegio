@@ -1,4 +1,4 @@
-export const materias = {
+const materias = {
     materias8verde1: [
 
     ],
@@ -1687,3 +1687,5 @@ export const materias = {
         }
     }
 }
+
+export default materias 
