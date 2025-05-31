@@ -1413,268 +1413,277 @@ export const materias = {
                 area: "Consejería",
             },
         },
-        materias11azul2: [
-            {
-                "Calculus": {
-                    letra: "A",
-                    area: "Matemáticas",
-                }
-            }, {
-                "AP Statistics": {
-                    letra: "A",
-                    area: "Matemáticas",
-                }
-            }, {
-                "Ingeniería & Tecnología": {
-                    letra: "B",
-                    area: "Ciencias",
-                }
-            }, {
-                "Física Avanzada": {
-                    letra: "B",
-                    area: "Ciencias",
-                }
-            }, {
-                "AP Chemistry": {
-                    letra: "B",
-                    area: "Ciencias",
-                }
-            }, {
-                "STEM": {
-                    letra: "B",
-                    area: "Ciencias",
-                }
-            }, {
-                "AP Computer Science Principles": {
-                    letra: "B",
-                    area: "Ciencias",
-                }
-            }, {
-                "Actualidad Colombiana & Ciudadanía": {
-                    letra: "C",
-                    area: "Sociales",
-                }
-            }, {
-                "Políticas Públicas & Gobierno": {
-                    letra: "C",
-                    area: "Sociales",
-                }
-            }, {
-                "AP Macroeconomics": {
-                    letra: "C",
-                    area: "Sociales",
-                }
-            }, {
-                "Emprendimiento": {
-                    letra: "C",
-                    area: "Sociales",
-                }
-            }, {
-                "AP Comparative Government": {
-                    letra: "C",
-                    area: "Sociales",
-                }
-            }, {
-                "Media Production": {
-                    letra: "D",
-                    area: "Inglés",
-                }
-            }, {
-                "Writing the World Today": {
-                    letra: "D",
-                    area: "Inglés",
-                }
-            }, {
-                "Drama and Poetry": {
-                    letra: "D",
-                    area: "Inglés",
-                }
-            }, {
-                "Comparative Literature and Film": {
-                    letra: "D",
-                    area: "Inglés",
-                }
-            }, {
-                "AP Psychology": {
-                    letra: "E",
-                    area: "Sociales",
-                }
-            }, {
-                "Filosofía Política": {
-                    letra: "E",
-                    area: "?",
-                }
-            }, {
-                "Portugués Lengua & Cultura": {
-                    letra: "E",
-                    area: "Tercera Lengua",
-                }
-            }, {
-                "AP Spanish Literature and Culture": {
-                    letra: "F",
-                    area: "Español",
-                }
-            }, {
-                "Periodismo": {
-                    letra: "F",
-                    area: "Español",
-                }
-            }, {
-                "Fundamentos de la Filosofía": {
-                    letra: "F",
-                    area: "Español",
-                }
-            }, {
-                "Literatura Colombiana": {
-                    letra: "F",
-                    area: "Español",
-                }
-            }, {
-                "Ética": { //Nota: Hay 3 éticas diferentes
-                    letra: "G",
-                    area: "Ética",
-                }
-            }, {
-                "Gimnasia Mixta": {
-                    letra: "H",
-                    area: "Educación Física & Deportes",
-                }
-            }, {
-                "Entrenamiento Funcional Mixto": {
-                    letra: "H",
-                    area: "Educación Física & Deportes",
-                }
-            }, {
-                "Fútbol Femenino": {
-                    letra: "H",
-                    area: "Educación Física & Deportes",
-                }
-            }, {
-                "Baloncesto Femenino": {
-                    letra: "H",
-                    area: "Educación Física & Deportes",
-                }
-            }, {
-                "Voleibol Mixto": {
-                    letra: "H",
-                    area: "Educación Física & Deportes",
-                }
-            }, {
-                "Baloncesto Masculino": {
-                    letra: "H",
-                    area: "Educación Física & Deportes",
-                }
-            }, {
-                "Fútbol Masculino": { //Nota: Hay 2 fútboles
-                    letra: "H",
-                    area: "Educación Física & Deportes",
-                }
-            }, {
-                "Orquesta Sinfónica": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Banda Sinfónica (Trompetas)": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Banda Sinfónica (Clarinetes & Saxofones)": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Banda Sinfónica (Flautas)": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Ensamble Instrumental 1": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Ensamble Instrumental 2": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Coro": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Danza": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "AP Music Theory": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Ear Training (Pre AP)": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Taller de Creación": { //Nota: Hay 2 talleres de creación
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Taller de Cerámica": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Taller de Escultura": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Taller de Diseño Gráfico Digital": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Taller de Fundamentos de Diseño Industrial": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Taller de Pintura": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Historia del Arte": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Taller MakerSpace": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Historia del Arte": {
-                    letra: "I",
-                    area: "Arte & Música",
-                }
-            }, {
-                "Asamblea": {
-                    letra: "J",
-                    area: "Asamblea",
-                }
-            }, {
-                "Consejería": {
-                    letra: "K",
-                    area: "Consejería",
-                }
+        materias11azul2: {
+            1: {
+                nombre: "AP Calculus",
+                letra: "A",
+                area: "Matemáticas",
             },
-        ]
+            2: {
+                nombre: "AP Statistics",
+                letra: "A",
+                area: "Matemáticas",
+            },
+            3: {
+                nombre: "Ingeniería & Tecnología",
+                letra: "B",
+                area: "Ciencias",
+            },
+            4: {
+                nombre: "Física Avanzada",
+                letra: "B",
+                area: "Ciencias",
+            },
+            5: {
+                nombre: "AP Chemistry",
+                letra: "B",
+                area: "Ciencias",
+            },
+            6: {
+                nombre: "STEM",
+                letra: "B",
+                area: "Ciencias",
+            },
+            7: {
+                nombre: "AP Computer Science Principles",
+                letra: "B",
+                area: "Ciencias",
+            },
+            8: {
+                nombre: "Actualidad Colombiana & Ciudadanía",
+                letra: "C",
+                area: "Sociales",
+            },
+            9: {
+                nombre: "Políticas Públicas & Gobierno",
+                letra: "C",
+                area: "Sociales",
+            },
+            10: {
+                nombre: "AP Macroeconomics",
+                letra: "C",
+                area: "Sociales",
+            },
+            11: {
+                nombre: "Emprendimiento",
+                letra: "C",
+                area: "Sociales",
+            },
+            12: {
+                nombre: "AP Comparative Government",
+                letra: "C",
+                area: "Sociales",
+            },
+            13: {
+                nombre: "Media Production",
+                letra: "C",
+                area: "Sociales",
+            },
+            14: {
+                nombre: "Writing the World Today",
+                letra: "D",
+                area: "Inglés",
+            },
+            15: {
+                nombre: "Drama and Poetry",
+                letra: "D",
+                area: "Inglés",
+            },
+            16: {
+                nombre: "Comparative Literature and Film",
+                letra: "D",
+                area: "Inglés",
+            },
+            17: {
+                nombre: "AP Psychology",
+                letra: "E",
+                area: "Sociales",
+            },
+            18: {
+                nombre: "Filosofía Política",
+                letra: "E",
+                area: "?",
+            },
+            19: {
+                nombre: "Portugués Lengua & Cultura",
+                letra: "E",
+                area: "Tercera Lengua",
+            },
+            20: {
+                nombre: "AP Spanish Literature and Culture",
+                letra: "F",
+                area: "Español",
+            },
+            21: {
+                nombre: "Periodismo",
+                letra: "F",
+                area: "Español",
+            },
+            22: {
+                nombre: "Fundamentos de la Filosofía",
+                letra: "F",
+                area: "Español",
+            },
+            23: {
+                nombre: "Literatura Colombiana",
+                letra: "F",
+                area: "Español",
+            },
+            24: {
+                nombre: "Ética",
+                letra: "G",
+                area: "Ética",
+            },
+            25: {
+                nombre: "Gimnasia Mixta",
+                letra: "H",
+                area: "Educación Física & Deportes",
+            },
+            26: {
+                nombre: "Entrenamiento Funcional Mixto",
+                letra: "H",
+                area: "Educación Física & Deportes",
+            },
+            27: {
+                nombre: "Fútbol Femenino",
+                letra: "H",
+                area: "Educación Física & Deportes",
+            },
+            28: {
+                nombre: "Baloncesto Femenino",
+                letra: "H",
+                area: "Educación Física & Deportes",
+            },
+            29: {
+                nombre: "Voleibol Mixto",
+                letra: "H",
+                area: "Educación Física & Deportes",
+            },
+            30: {
+                nombre: "Baloncesto Masculino",
+                letra: "H",
+                area: "Educación Física & Deportes",
+            },
+            31: {
+                nombre: "Fútbol Masculino",
+                letra: "H",
+                area: "Educación Física & Deportes",
+            },
+            32: {
+                nombre: "Fútbol Masculino",
+                letra: "H",
+                area: "Educación Física & Deportes",
+            },
+            33: {
+                nombre: "Orquesta Sinfónica",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            34: {
+                nombre: "Banda Sinfónica (Trompetas)",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            35: {
+                nombre: "Banda Sinfónica (Clarinetes & Saxofones)",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            36: {
+                nombre: "Banda Sinfónica (Flautas)",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            37: {
+                nombre: "Ensamble Instrumental 1",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            38: {
+                nombre: "Ensamble Instrumental 2",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            39: {
+                nombre: "Coro",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            40: {
+                nombre: "Danza",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            41: {
+                nombre: "AP Music Theory",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            42: {
+                nombre: "Ear Training (Pre AP)",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            43: {
+                nombre: "Taller de Creación", //Nota: Hay 2 talleres de creación
+                letra: "I",
+                area: "Arte & Música",
+            },
+            44: {
+                nombre: "Taller de Creación", //Nota: Hay 2 talleres de creación
+                letra: "I",
+                area: "Arte & Música",
+            },
+            45: {
+                nombre: "Taller de Cerámica",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            46: {
+                nombre: "Taller de Escultura",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            47: {
+                nombre: "Taller de Diseño Gráfico Digital",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            48: {
+                nombre: "Taller de Fundamentos de Diseño Industrial",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            49: {
+                nombre: "Taller de Pintura",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            50: {
+                nombre: "Historia del Arte",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            51: {
+                nombre: "Taller MakerSpace",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            52: {
+                nombre: "Historia del Arte",
+                letra: "I",
+                area: "Arte & Música",
+            },
+            53: {
+                nombre: "Asamblea",
+                letra: "J",
+                area: "Asamblea",
+            },
+            54: {
+                nombre: "Consejería",
+                letra: "K",
+                area: "Consejería",
+            }
+        }
     }
 }
