@@ -1,13 +1,37 @@
 import materias from './materias.js';
 
-function Materias () {
-    const materias11verde = Object.entries(materias.materias10verde1);
+function Materias ({ selectedSemester, letraFiltro }) {
+    const handleSemesterMaterials = (colorHorario) => {
+        switch (colorHorario) {
+            case 'verde':
+                return Object.entries(materias.materias10verde1);
+            case 'azul':
+                return Object.entries(materias.materias10azul1);
+            default:
+                return null;
+        }
+    }
 
-    return (
+    const materias10 = handleSemesterMaterials(selectedSemester);
+
+    // Filtra las materias por la letra correspondiente al semestre seleccionado
+    const materiasFiltradas = materias10
+        ? materias10.filter(([_, materia]) => materia.letra === letraFiltro)
+        : [];
+
+    return materias10 === null ? (
+        <>
+            <p>Color: {selectedSemester} </p>
+            <p> materias10: {JSON.stringify(materias10)}</p>
+            <div className="alert alert-danger" role="alert">
+                No hay materias disponibles para el semestre seleccionado.
+            </div>
+        </>
+    ) : (
         <select className="form-select" id="inputGroupSelect01">
             <option defaultValue>Elige la materia...</option>
-            {materias11verde.map(([id, materia]) => (
-                <option key={id} value={materia.area}>{materia.nombre}</option>
+            {materiasFiltradas.map(([id, materia]) => (
+                <option key={id} value={materia.letra}>{materia.nombre}</option>
             ))}
         </select>
     )
