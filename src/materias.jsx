@@ -13,10 +13,9 @@ function Materias ({ selectedSemester, letraFiltro }) {
     }
 
     const materias10 = handleSemesterMaterials(selectedSemester);
-
     // Filtra las materias por la letra correspondiente al semestre seleccionado
     const materiasFiltradas = materias10
-        ? materias10.filter(([_, materia]) => materia.letra === letraFiltro)
+        ? materias10.filter(([_, materia]) => materia.letra === letraFiltro || _ === null)
         : [];
 
     return materias10 === null ? (
