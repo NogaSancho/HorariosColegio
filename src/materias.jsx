@@ -21,8 +21,6 @@ function Materias ({ selectedSemester, letraFiltro }) {
 
     return materias10 === null ? (
         <>
-            <p>Color: {selectedSemester} </p>
-            <p> materias10: {JSON.stringify(materias10)}</p>
             <div className="alert alert-danger" role="alert">
                 No hay materias disponibles para el semestre seleccionado.
             </div>
