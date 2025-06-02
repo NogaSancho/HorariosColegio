@@ -5,11 +5,12 @@ import Footer from './Footer.jsx'
 
 function App() {
   const [selectedColorSemester, setSelectedColorSemester] = useState(null);
+  const [selectedGradoActual, setSelectedGradoActual] = useState(null);
 
   return (
     <>
       <Header />
-      <HorariosForm selectedColorSemester={selectedColorSemester} setSelectedColorSemester={setSelectedColorSemester} />
+      <HorariosForm selectedColorSemester={selectedColorSemester} setSelectedColorSemester={setSelectedColorSemester} selectedGradoActual={selectedGradoActual} setSelectedGradoActual={setSelectedGradoActual} />
       <Footer />
     </>
   )
