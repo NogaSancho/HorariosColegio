@@ -77,7 +77,7 @@ function HorariosForm({ selectedColorSemester, setSelectedColorSemester }) {
                                             aria-label="Radio button for following text input" />
                                     </div>
                                 </div>
-                                <p>Vede</p>
+                                <p>Verde</p>
                             </div>
 
                             <div className="col-sm-3">
