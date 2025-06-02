@@ -3,11 +3,11 @@ import './Bootstrap/js/bootstrap.bundle.min.js';
 import './Bootstrap/js/color-modes.js';
 import Materias from './materias.jsx';
 
-function HorariosForm({ selectedSemester, setSelectedSemester }) {
-    console.log(selectedSemester);
-    const handleSemesterChange = (event) => {
+function HorariosForm({ selectedColorSemester, setSelectedColorSemester }) {
+    console.log(selectedColorSemester);
+    const handleColorSemesterChange = (event) => {
         const value = event.target.value;
-        setSelectedSemester(value);
+        setSelectedColorSemester(value);
     }
 
     return (
@@ -15,7 +15,7 @@ function HorariosForm({ selectedSemester, setSelectedSemester }) {
             <div className="bg-body-tertiary p-5 rounded">
                 <div className="row justify-content-center">
                     <div className="col-md-3">
-                        <div className="nav-link" style={{textAlign: "center"}}>Año Horario:
+                        <div className="nav-link" style={{ textAlign: "center" }}>Año Horario:
                             <div className="input-group mb-3">
                                 <select className="form-select" id="inputGroupSelect01">
                                     <option defaultValue>Elije el año actual...</option>
@@ -27,7 +27,7 @@ function HorariosForm({ selectedSemester, setSelectedSemester }) {
                         </div>
                     </div>
                     <div className="col-md-3" id="Año-Horario">
-                        <div className="nav-link" style={{textAlign: "center"}}>Año Horario:
+                        <div className="nav-link" style={{ textAlign: "center" }}>Año Horario:
                             <div className="input-group mb-3">
                                 <select className="form-select" id="inputGroupSelect01">
                                     <option defaultValue>Elije el año actual...</option>
@@ -39,7 +39,7 @@ function HorariosForm({ selectedSemester, setSelectedSemester }) {
                         </div>
                     </div>
                     <div className="col-md-3" id="Alumno">
-                        <div className="nav-link" style={{textAlign: "center"}}>Alumno:
+                        <div className="nav-link" style={{ textAlign: "center" }}>Alumno:
                             <div className="input-group mb-3">
                                 <select className="form-select" id="inputGroupSelect01">
                                     <option defaultValue>Elije tu nombre...</option>
@@ -51,7 +51,7 @@ function HorariosForm({ selectedSemester, setSelectedSemester }) {
                         </div>
                     </div>
                     <div className="col-md-3" id="Grado-Actual">
-                        <div className="nav-link" style={{textAlign: "center"}}>Grado Actual:
+                        <div className="nav-link" style={{ textAlign: "center" }}>Grado Actual:
                             <div className="input-group mb-3">
                                 <select className="form-select" id="inputGroupSelect01">
                                     <option defaultValue>Elije tu Grado Actual...</option>
@@ -64,27 +64,27 @@ function HorariosForm({ selectedSemester, setSelectedSemester }) {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="row justify-content-center py-4 mx-auto">
                     <div className="col-sm-5">
-                        <h1 className="display-9 fw-normal" style={{textAlign: "center"}}>Semestre 1</h1>
-                        <p style={{textAlign: "center"}}>Horario</p>
-                        <div className="row" style={{marginLeft: "38%"}}>
-                            <div className="col-sm-2">
+                        <h1 className="display-9 fw-normal" style={{ textAlign: "center" }}>Semestre 1</h1>
+                        <p style={{ textAlign: "center" }}>Horario</p>
+                        <div className="row" style={{ marginLeft: "38%" }}>
+                            <div className="col-sm-3">
                                 <div className="input-group" id="horario-verde">
                                     <div className="input-group-text">
-                                        <input className="form-check-input mt-0" type="radio" value="verde" onClick={handleSemesterChange}
-                                            aria-label="Radio button for following text input"/>
+                                        <input className="form-check-input mt-0" type="radio" name="color" value="verde" onClick={handleColorSemesterChange}
+                                            aria-label="Radio button for following text input" />
                                     </div>
                                 </div>
-                                <p>Verde</p>
+                                <p>Vede</p>
                             </div>
 
-                            <div className="col-sm-2">
+                            <div className="col-sm-3">
                                 <div className="input-group" id="horario-azul">
                                     <div className="input-group-text">
-                                        <input className="form-check-input mt-0" type="radio" value="azul" onClick={handleSemesterChange}
-                                            aria-label="Radio button for following text input"/>
+                                        <input className="form-check-input mt-0" type="radio" name="color" value="azul" onClick={handleColorSemesterChange}
+                                            aria-label="Radio button for following text input" />
                                     </div>
                                 </div>
                                 <p>Azul</p>
@@ -94,74 +94,74 @@ function HorariosForm({ selectedSemester, setSelectedSemester }) {
                             <div className="col-sm-14" id="materias-As">
                                 <div className="input-group mb-3">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">A</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="A" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="A" />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Bs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">B</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="B" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="B" />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Cs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">C</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="C" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="C" />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Ds">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">D</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="D" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="D" />
                                 </div>
                             </div>
                             <div className="col-sm-14">
-                                <div className="input-group mb-3"   id="materias-Es">
+                                <div className="input-group mb-3" id="materias-Es">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">E</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="E" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="E" />
                                 </div>
                             </div>
                             <div className="col-sm-14">
-                                <div className="input-group mb-3"   id="materias-Fs">
+                                <div className="input-group mb-3" id="materias-Fs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">F</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="F" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="F" />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Gs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">G</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="G" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="G" />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Hs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">H</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="H" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="H" />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Is">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">I</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="I" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="I" />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Js">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">J</label>
-                                    <Materias selectedSemester={selectedSemester} letraFiltro="J" />
+                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="J" />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-sm-5">
-                        <h1 className="display-9 fw-normal" style={{textAlign: "center"}}>Semestre 2</h1>
-                        <p style={{textAlign: "center"}}>Horario</p>
-                        <div className="row" style={{marginLeft: "38%"}}>
+                        <h1 className="display-9 fw-normal" style={{ textAlign: "center" }}>Semestre 2</h1>
+                        <p style={{ textAlign: "center" }}>Horario</p>
+                        <div className="row" style={{ marginLeft: "38%" }}>
                             <div className="col-sm-2">
                                 <div className="input-group" id="horario-verde">
                                     <div className="input-group-text">
-                                        <input className="form-check-input mt-0" type="radio" value="verde" onClick={handleSemesterChange}
-                                            aria-label="Radio button for following text input"/>
+                                        <input className="form-check-input mt-0" type="radio" name="color2" value="verde" onClick={handleColorSemesterChange}
+                                            aria-label="Radio button for following text input" />
                                     </div>
                                 </div>
                                 <p>Verde</p>
@@ -170,8 +170,8 @@ function HorariosForm({ selectedSemester, setSelectedSemester }) {
                             <div className="col-sm-2">
                                 <div className="input-group" id="horario-azul">
                                     <div className="input-group-text">
-                                        <input className="form-check-input mt-0" type="radio" value="azul" onClick={handleSemesterChange}
-                                            aria-label="Radio button for following text input"/>
+                                        <input className="form-check-input mt-0" type="radio" name="color2" value="azul" onClick={handleColorSemesterChange}
+                                            aria-label="Radio button for following text input" />
                                     </div>
                                 </div>
                                 <p>Azul</p>

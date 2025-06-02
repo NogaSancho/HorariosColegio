@@ -4,12 +4,12 @@ import HorariosForm from './HorariosForm.jsx'
 import Footer from './Footer.jsx'
 
 function App() {
-  const [selectedSemester, setSelectedSemester] = useState(null);
+  const [selectedColorSemester, setSelectedColorSemester] = useState(null);
 
   return (
     <>
       <Header />
-      <HorariosForm selectedSemester={selectedSemester} setSelectedSemester={setSelectedSemester} />
+      <HorariosForm selectedColorSemester={selectedColorSemester} setSelectedColorSemester={setSelectedColorSemester} />
       <Footer />
     </>
   )

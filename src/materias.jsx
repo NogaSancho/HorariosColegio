@@ -1,6 +1,6 @@
 import materias from './materias.js';
 
-function Materias ({ selectedSemester, letraFiltro }) {
+function Materias ({ selectedColorSemester, letraFiltro }) {
     const handleSemesterMaterials = (colorHorario) => {
         switch (colorHorario) {
             case 'verde':
@@ -12,7 +12,7 @@ function Materias ({ selectedSemester, letraFiltro }) {
         }
     }
 
-    const materias10 = handleSemesterMaterials(selectedSemester);
+    const materias10 = handleSemesterMaterials(selectedColorSemester);
     // Filtra las materias por la letra correspondiente al semestre seleccionado
     const materiasFiltradas = materias10
         ? materias10.filter(([_, materia]) => materia.letra === letraFiltro || _ === null)
