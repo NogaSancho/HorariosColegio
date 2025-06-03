@@ -1,7 +1,8 @@
 import './Bootstrap/css/bootstrap.min.css';
 import './Bootstrap/js/bootstrap.bundle.min.js';
 import './Bootstrap/js/color-modes.js';
-import Materias from './materias.jsx';
+import MateriasSemestre1 from './materias.jsx';
+import MateriasSemestre2 from './materias2.jsx';
 
 function HorariosForm({ selectedColorSemester, setSelectedColorSemester, selectedGradoActual, setSelectedGradoActual }) {
     console.log(selectedColorSemester);
@@ -15,6 +16,7 @@ function HorariosForm({ selectedColorSemester, setSelectedColorSemester, selecte
         const value = event.target.value;
         setSelectedGradoActual(value);
     }
+    
     return (
         <div className="container my-5">
             <div className="bg-body-tertiary p-5 rounded">
@@ -99,61 +101,61 @@ function HorariosForm({ selectedColorSemester, setSelectedColorSemester, selecte
                             <div className="col-sm-14" id="materias-As">
                                 <div className="input-group mb-3">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">A</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="A" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="A" selectedGradoActual={selectedGradoActual}/>
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Bs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">B</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="B" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="B" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Cs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">C</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="C" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="C" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Ds">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">D</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="D" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="D" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Es">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">E</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="E" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="E" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Fs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">F</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="F" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="F" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Gs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">G</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="G" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="G" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Hs">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">H</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="H" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="H" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Is">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">I</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="I" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="I" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-Js">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">J</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="J" selectedGradoActual={selectedGradoActual} semestre={1} />
+                                    <MateriasSemestre1 selectedColorSemester={selectedColorSemester} letraFiltro="J" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                         </div>
@@ -165,7 +167,7 @@ function HorariosForm({ selectedColorSemester, setSelectedColorSemester, selecte
                             <div className="col-sm-2">
                                 <div className="input-group" id="horario-verde">
                                     <div className="input-group-text">
-                                        <input className="form-check-input mt-0" type="radio" name="color2" value="verde" onClick={handleColorSemesterChange}
+                                        <input className="form-check-input mt-0" type="radio" name="color2" value="verde2" onClick={handleColorSemesterChange}
                                             aria-label="Radio button for following text input" />
                                     </div>
                                 </div>
@@ -175,7 +177,7 @@ function HorariosForm({ selectedColorSemester, setSelectedColorSemester, selecte
                             <div className="col-sm-2">
                                 <div className="input-group" id="horario-azul">
                                     <div className="input-group-text">
-                                        <input className="form-check-input mt-0" type="radio" name="color2" value="azul" onClick={handleColorSemesterChange}
+                                        <input className="form-check-input mt-0" type="radio" name="color2" value="azul2" onClick={handleColorSemesterChange}
                                             aria-label="Radio button for following text input" />
                                     </div>
                                 </div>
@@ -186,61 +188,61 @@ function HorariosForm({ selectedColorSemester, setSelectedColorSemester, selecte
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-A2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">A</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="A" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="A" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-B2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">B</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="B" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="B" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-C2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">C</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="C" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="C" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-D2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">D</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="D" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="D" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-E2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">E</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="E" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="E" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-F2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">F</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="F" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="F" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-G2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">G</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="G" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="G" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-H2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">H</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="H" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="H" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-I2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">I</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="I" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="I" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                             <div className="col-sm-14">
                                 <div className="input-group mb-3" id="materias-J2s">
                                     <label className="input-group-text" htmlFor="inputGroupSelect01">J</label>
-                                    <Materias selectedColorSemester={selectedColorSemester} letraFiltro="J" selectedGradoActual={selectedGradoActual} semestre={2} />
+                                    <MateriasSemestre2 selectedColorSemester={selectedColorSemester} letraFiltro="J" selectedGradoActual={selectedGradoActual} />
                                 </div>
                             </div>
                         </div>
