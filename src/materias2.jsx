@@ -1,7 +1,6 @@
 import materias from './materias.js';
 
 function MateriasSemestre2({ selectedColorSemester, letraFiltro, selectedGradoActual  }) {
-    let materias10 = null;
     const handleSemesterMaterials = (colorHorario, selectedGradoActual) => {
                 switch (selectedGradoActual) {
                     case "8":
@@ -17,7 +16,7 @@ function MateriasSemestre2({ selectedColorSemester, letraFiltro, selectedGradoAc
                 }
     }
     
-    materias10 = handleSemesterMaterials(selectedColorSemester, selectedGradoActual);
+    const materias10 = handleSemesterMaterials(selectedColorSemester, selectedGradoActual);
     // Filtra las materias por la letra correspondiente al semestre seleccionado
     const materiasFiltradas = materias10
         ? materias10.filter(([_, materia]) => materia.letra === letraFiltro || _ === null)
@@ -33,7 +32,7 @@ function MateriasSemestre2({ selectedColorSemester, letraFiltro, selectedGradoAc
         <select className="form-select" id="inputGroupSelect01">
             <option defaultValue>Elige la materia...</option>
             {materiasFiltradas.map(([id, materia]) => (
-                <option key={id} value={id}>{materia.nombre}</option>
+                <option key={id} value={materia.letra}>{materia.nombre}</option>
             ))}
         </select>
     )
