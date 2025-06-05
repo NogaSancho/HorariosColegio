@@ -1,6 +1,18 @@
 import materias from './materias.js';
+import { aguamarina } from './aguamarina.js';
+import { useState } from 'react';
+
+
 
 function MateriasSemestre1({ selectedColorSemester, letraFiltro, selectedGradoActual }) {
+  const [aguamarinaSelected, setAguamarinaSelected] = useState(null);
+  console.log("Aguamarina semestre 1 check? => ", aguamarinaSelected);
+  const handleAguamarinaChange = (event) => {
+    const isChecked = event.target.checked;
+    setAguamarinaSelected(isChecked);
+  }
+
+
   const handleSemesterMaterials = (colorHorario, selectedGradoActual) => {
     if (colorHorario === null || colorHorario === undefined) {
       return null;
@@ -25,6 +37,8 @@ function MateriasSemestre1({ selectedColorSemester, letraFiltro, selectedGradoAc
     ? materias10.filter(([_, materia]) => materia.letra === letraFiltro || _ === null)
     : [];
 
+  const materiasAguamarina = aguamarinaSelected ? materiasFiltradas.map(([_, materia]) => aguamarina(materia, selectedColorSemester)) : materiasFiltradas;
+
   return (materias10 === null || materias10 === undefined) ? (
     <>
       <div className="alert alert-danger" role="alert">
@@ -32,12 +46,20 @@ function MateriasSemestre1({ selectedColorSemester, letraFiltro, selectedGradoAc
       </div>
     </>
   ) : (
-    <select className="form-select" id="inputGroupSelect01">
-      <option defaultValue>Elige la materia...</option>
-      {materiasFiltradas.map(([id, materia]) => (
-        <option key={id} value={materia.letra}>{materia.nombre}</option>
-      ))}
-    </select>
+    <>
+      <select className="form-select" id="inputGroupSelect01">
+        <option defaultValue>Elige la materia...</option>
+        {materiasAguamarina.map(([id, materia]) => (
+          <option key={id} value={materia.letra}>{materia.nombre}</option>
+        ))}
+      </select>
+      <div className="form-check">
+        <input className="form-check-input" type="checkbox" value="aguaSelected" id={`checkAguamarinaMateria ${letraFiltro}`} onClick={handleAguamarinaChange} />
+        <label className="form-check-label" htmlFor={`checkAguamarinaMateria ${letraFiltro}`}>
+          Aguamarina
+        </label>
+      </div>
+    </>
   )
 }
 

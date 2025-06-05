@@ -1,6 +1,14 @@
 import materias from './materias.js';
+import { aguamarina } from './aguamarina.js';
+import React, { useState } from 'react';
 
 function MateriasSemestre2({ selectedColorSemester, letraFiltro, selectedGradoActual }) {
+  const [aguamarinaSelected, setAguamarinaSelected] = useState(null);
+  console.log("Aguamarina semestre 2 check? => ", aguamarinaSelected);
+    const handleAguamarinaChange = (event) => {
+      const isChecked = event.target.checked;
+      setAguamarinaSelected(isChecked);
+    }
   const handleSemesterMaterials = (colorHorario, selectedGradoActual) => {
     if (colorHorario === null || colorHorario === undefined) {
       return null;
@@ -25,6 +33,18 @@ function MateriasSemestre2({ selectedColorSemester, letraFiltro, selectedGradoAc
     ? materias10.filter(([_, materia]) => materia.letra === letraFiltro || _ === null)
     : [];
 
+    const materiasAguamarina = (aguamarinaSelected) => {
+    return materiasFiltradas.map(([_, materia]) => {
+      if (aguamarinaSelected) {
+        const { newMateria, newColor } = aguamarina(materia, selectedColorSemester);
+        return handleSemesterMaterials(newColor, selectedGradoActual);
+      }
+      return materia;
+    });
+  };
+
+  const materiasFinal = materiasAguamarina(aguamarinaSelected)
+
   return (materias10 === null) ? (
     <>
       <div className="alert alert-danger" role="alert">
@@ -32,12 +52,20 @@ function MateriasSemestre2({ selectedColorSemester, letraFiltro, selectedGradoAc
       </div>
     </>
   ) : (
-    <select className="form-select" id="inputGroupSelect02">
-      <option defaultValue>Elige la materia...</option>
-      {materiasFiltradas.map(([id, materia]) => (
-        <option key={id} value={materia.letra}>{materia.nombre}</option>
-      ))}
-    </select>
+    <>
+      <select className="form-select" id="inputGroupSelect02">
+        <option defaultValue>Elige la materia...</option>
+        {materiasFinal.map(([id, materia]) => (
+          <option key={id} value={materia.letra}>{materia.nombre}</option>
+        ))}
+      </select>
+      <div className="form-check">
+        <input className="form-check-input" type="checkbox" value="aguaSelected" id={`checkAguamarinaMateria ${letraFiltro}`} onClick={handleAguamarinaChange} />
+        <label className="form-check-label" htmlFor={`checkAguamarinaMateria ${letraFiltro}`}>
+          Aguamarina
+        </label>
+      </div>
+    </>
   )
 }
 
