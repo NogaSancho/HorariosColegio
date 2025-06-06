@@ -7,18 +7,427 @@ const materias= {
     ],
     materias8azul1: [
         
+
+        {
+            "Orquesta Sinfónica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Trompetas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Clarinetes & Saxofones)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Flautas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 1":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 2":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Coro":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Danza":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ear Training (Pre AP)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Creación":{ //Nota: Hay 2 talleres de creación
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Cerámica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Escultura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Diseño Gráfico Digital":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Fundamentos de Diseño Industrial":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Pintura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Historia del Arte":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller MakerSpace":{
+            letra:"I" ,
+            area: "Tecnología",
+            }
+        },
     ],
     materias8azul2: [
         
     ],
     materias9verde1: [
-
+        {
+            "Geometría Avanzada": {
+            letra: "A",
+            area: "Matemáticas",
+            }
+        },{
+            "Funciones & Estadística": {
+            letra: "A",
+            area: "Matemáticas",
+            }
+        },{
+            "Funciones, Trigonometría & Probabilidad": {
+            letra: "A",
+            area: "Matemáticas",
+            }
+        },{
+            "Fundamentos de Química": {
+            letra: "B",
+            area: "Ciencias",
+            }
+        },{
+            "Física Mecánica": {
+            letra: "B",
+            area: "Ciencias",
+            }
+        },{
+            "Biología General": {
+            letra: "B",
+            area: "Ciencias",
+            }
+        },{
+            "Historia de Colombia": {
+            letra: "C",
+            area: "Sociales",
+            }
+        },{
+            "Introducción a la Economía": {
+            letra: "C",
+            area: "Sociales",
+            }
+        },{
+            "Actualidad Colombiana & Ciudadanía": {
+            letra: "C",
+            area: "Sociales",
+            }
+        },{
+            "Fiction: Reading & Writing": {
+            letra: "D",
+            area: "Inglés",
+            }
+        },{
+            "AP English Language & Composition": {
+            letra: "D",
+            area: "Inglés",
+            }
+        },{
+            "El Héroe en la Literatura": {
+            letra: "E",
+            area: "Español",
+            }
+        },{
+            "Argumentación": {
+            letra: "E",
+            area: "Español",
+            }
+        },{
+            "Lectura Académica": {
+            letra: "E",
+            area: "Español",
+            }
+        },{
+            "Expresión Oral": {
+            letra: "E",
+            area: "Español",
+            }
+        },{
+            "Francés Básico": {
+            letra: "F",
+            area: "Tercera Lengua",
+            }
+        },{
+            "Portugués Básico": {
+            letra: "F",
+            area: "Tercera Lengua",
+            }
+        },{
+            "Cuerpo, Acción & Vida": { //Nota: Hay dos CAVs
+            letra: "G",
+            area: "?",
+            }
+        },{
+            "Fenómenos Religiosos Contemporáneos": {
+            letra: "G",
+            area: "Religión",
+            }
+        },{
+            "Religiones Monoteístas, Abrahámicas, del Libro Sagrado": {
+            letra: "G",
+            area: "Religión",
+            }
+        },{
+            "Creencia & Religión": {
+            letra: "G",
+            area: "Religión",
+            }
+        },{
+            "Pensamiento Social de las Religiones": {
+            letra: "G",
+            area: "Religión",
+            }
+        },{
+            "Gimnasia Mixta":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Entrenamiento Funcional Mixto":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Fútbol Femenino":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Baloncesto Femenino":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Voleibol Mixto":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Baloncesto Masculino":{
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Fútbol Masculino":{ //Nota: Hay 2 fútboles
+            letra:"H" ,
+            area: "Educación Física & Deportes",
+            }
+        },{
+            "Orquesta Sinfónica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Trompetas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Clarinetes & Saxofones)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Flautas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 1":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 2":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Coro":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Danza":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ear Training (Pre AP)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Creación":{ //Nota: Hay 2 talleres de creación
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Cerámica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Escultura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Diseño Gráfico Digital":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Fundamentos de Diseño Industrial":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Pintura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "AP Studio Art":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Asamblea":{
+            letra:"J" ,
+            area: "Asamblea",
+            }
+        },{
+            "Consejería":{
+            letra:"K" ,
+            area: "Consejería",
+            }
+        },
     ],
     materias9verde2: [
 
     ],
     materias9azul1: [
 
+
+        {
+            "Orquesta Sinfónica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Trompetas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Clarinetes & Saxofones)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Banda Sinfónica (Flautas)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 1":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ensamble Instrumental 2":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Coro":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Danza":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Ear Training (Pre AP)":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Creación":{ //Nota: Hay 2 talleres de creación
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Cerámica":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Escultura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Diseño Gráfico Digital":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Fundamentos de Diseño Industrial":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller de Pintura":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Historia del Arte":{
+            letra:"I" ,
+            area: "Arte & Música",
+            }
+        },{
+            "Taller MakerSpace":{
+            letra:"I" ,
+            area: "Tecnología",
+            }
+        },
     ],
     materias9azul2: [
 
@@ -864,11 +1273,6 @@ const materias= {
             area: "Arte & Música",
             }
         },{
-            "AP Music Theory":{
-            letra:"I" ,
-            area: "Arte & Música",
-            }
-        },{
             "Taller de Creación":{ //Nota: Hay 2 talleres de creación
             letra:"I" ,
             area: "Arte & Música",
@@ -899,9 +1303,14 @@ const materias= {
             area: "Arte & Música",
             }
         },{
-            "AP Studio Art":{
+            "Historia del Arte":{
             letra:"I" ,
             area: "Arte & Música",
+            }
+        },{
+            "Taller MakerSpace":{
+            letra:"I" ,
+            area: "Tecnología",
             }
         },{
             "Asamblea":{
@@ -1984,7 +2393,7 @@ const materias= {
         },{
             "Taller MakerSpace":{
             letra:"I" ,
-            area: "Arte & Música",
+            area: "Tecnología",
             }
         },{
             "Asamblea":{
