@@ -5,18 +5,18 @@ import MateriasSemestre1 from './materias.jsx';
 import MateriasSemestre2 from './materias2.jsx';
 
 function HorariosForm({ selectedColorSemester1, setSelectedColorSemester1, selectedColorSemester2, setSelectedColorSemester2, selectedGradoActual, setSelectedGradoActual }) {
-  console.log("Color horario semestre 1 seleccionado: "+selectedColorSemester1);
+  console.log("Color horario semestre 1 seleccionado: " + selectedColorSemester1);
   const handleColorSemester1Change = (event) => {
     const value = event.target.value;
     setSelectedColorSemester1(value);
   }
-  console.log("Color horario semestre 2 seleccionado: "+selectedColorSemester2);
+  console.log("Color horario semestre 2 seleccionado: " + selectedColorSemester2);
   const handleColorSemester2Change = (event) => {
     const value = event.target.value;
     setSelectedColorSemester2(value);
   }
 
-  console.log("Grado actual seleccionado: "+selectedGradoActual);
+  console.log("Grado actual seleccionado: " + selectedGradoActual);
   const handleGradoActualChange = (event) => {
     const value = event.target.value;
     setSelectedGradoActual(value);
@@ -92,64 +92,16 @@ function HorariosForm({ selectedColorSemester1, setSelectedColorSemester1, selec
             </div>
             <div className="row">
               <div className="col-sm-14" id="materias-As">
-                <div className="input-group mb-3">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">A</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="A" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-Bs">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">B</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="B" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-Cs">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">C</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="C" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-Ds">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">D</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="D" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-Es">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">E</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="E" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-Fs">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">F</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="F" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-Gs">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">G</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="G" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-Hs">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">H</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="H" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-Is">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">I</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="I" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-Js">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">J</label>
-                  <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="J" selectedGradoActual={selectedGradoActual} />
-                </div>
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="A" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="B" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="C" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="D" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="E" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="F" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="G" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="H" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="I" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="J" selectedGradoActual={selectedGradoActual} />
               </div>
             </div>
           </div>
@@ -178,66 +130,16 @@ function HorariosForm({ selectedColorSemester1, setSelectedColorSemester1, selec
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-A2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">A</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="A" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-B2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">B</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="B" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-C2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">C</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="C" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-D2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">D</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="D" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-E2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">E</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="E" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-F2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">F</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="F" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-G2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">G</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="G" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-H2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">H</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="H" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-I2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">I</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="I" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
-              <div className="col-sm-14">
-                <div className="input-group mb-3" id="materias-J2s">
-                  <label className="input-group-text" htmlFor="inputGroupSelect01">J</label>
-                  <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="J" selectedGradoActual={selectedGradoActual} />
-                </div>
-              </div>
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="A" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="B" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="C" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="D" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="E" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="F" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="G" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="H" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="I" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="J" selectedGradoActual={selectedGradoActual} />
             </div>
           </div>
         </div>

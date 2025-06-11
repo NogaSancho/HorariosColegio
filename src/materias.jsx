@@ -6,7 +6,7 @@ function MateriasSemestre1({ selectedColorSemester, letraFiltro, selectedGradoAc
   const [useAguamarina, setUseAguamarina] = useState(false);
   const [currentLetraFiltro, setCurrentLetraFiltro] = useState(letraFiltro);
   const [currentColorSemester, setCurrentColorSemester] = useState(selectedColorSemester);
-  
+
   useEffect(() => {
     if (useAguamarina) {
       const result = aguamarina(letraFiltro, selectedColorSemester);
@@ -43,7 +43,7 @@ function MateriasSemestre1({ selectedColorSemester, letraFiltro, selectedGradoAc
   }
 
   const materias10 = handleSemesterMaterials(currentColorSemester, selectedGradoActual);
-  
+
   // Filtra las materias por la letra correspondiente al semestre seleccionado
   const materiasFiltradas = materias10
     ? materias10.filter(([_, materia]) => materia.letra === currentLetraFiltro || _ === null)
@@ -59,24 +59,29 @@ function MateriasSemestre1({ selectedColorSemester, letraFiltro, selectedGradoAc
     </>
   ) : (
     <>
-      <select className="form-select" id="inputGroupSelect01">
-        <option defaultValue>Elige la materia...</option>
-        {materiasFiltradas.map(([id, materia]) => (
-          <option key={id} value={materia.letra}>{materia.nombre}</option>
-        ))}
-      </select>
-      <div className="form-check">
-        <input 
-          className="form-check-input" 
-          type="checkbox" 
-          checked={useAguamarina}
-          onChange={handleAguamarinaChange}
-          id={`checkAguamarinaMateria ${currentLetraFiltro}`} 
-        />
-        <label className="form-check-label" htmlFor={`checkAguamarinaMateria ${currentLetraFiltro}`}>
-          Aguamarina
-        </label>
-      </div>
+        <div className="col-sm-14">
+          <div className="input-group mb-3" id={`materias-${currentLetraFiltro}s`}>
+            <label className="input-group-text" htmlFor="inputGroupSelect01">{currentLetraFiltro} style={currentColorSemester == "azul2" ? {backgroundColor: 'blue'} : {backgroundColor: 'green'}}</label>
+            <select className="form-select" id="inputGroupSelect01">
+              <option defaultValue>Elige la materia...</option>
+              {materiasFiltradas.map(([id, materia]) => (
+                <option key={id} value={materia.letra}>{materia.nombre}</option>
+              ))}
+            </select>
+            <div className="form-check">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                checked={useAguamarina}
+                onChange={handleAguamarinaChange}
+                id={`checkAguamarinaMateria ${currentLetraFiltro}`}
+              />
+              <label className="form-check-label" htmlFor={`checkAguamarinaMateria ${currentLetraFiltro}`}>
+                Aguamarina
+              </label>
+            </div>
+          </div>
+        </div>
     </>
   )
 }
