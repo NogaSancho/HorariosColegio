@@ -1778,13 +1778,13 @@ const materias = {
         },
         7: {
             nombre: "Estadística",
-            letra: "A",
-            area: "Ciencias",
+            letra: "B",
+            area: "Matematicas",
         },
         8: {
             nombre: "Cálculo Diferencial",
-            letra: "A",
-            area: "Ciencias",
+            letra: "B",
+            area: "Matematicas",
         },
         9: {
             nombre: "Media Production",
