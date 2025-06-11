@@ -1,42 +1,42 @@
 // Este archivo esta encargado de manejar la logica de los horarios aguamarina basados en el doc que esta en github y en el archivo aguamarina.py
-export const aguamarina = (materia, colorHorario) => {
+export const aguamarina = (letraFiltro, colorHorario) => {
     switch (colorHorario) {
         case "verde":
-            switch (materia.letra) {
+            switch (letraFiltro) {
                 case "A":
-                    materia.letra = "E (o H los lunes)";
+                    letraFiltro = "E"; // E (o H los lunes)
                     colorHorario = "azul";
                     break;
                 case "B":
-                    materia.letra = "C (o H los miercoles)";
+                    letraFiltro = "C"; // C (o H los miercoles)
                     colorHorario = "azul";
                     break;
                 case "C":
-                    materia.letra = "B";
+                    letraFiltro = "B";
                     colorHorario = "azul";
                     break;
                 case "D":
-                    materia.letra = "F";
+                    letraFiltro = "F";
                     colorHorario = "azul";
                     break;
                 case "E":
-                    materia.letra = "A";
+                    letraFiltro = "A";
                     colorHorario = "azul";
                     break;
                 case "F":
-                    materia.letra = "D";
+                    letraFiltro = "D";
                     colorHorario = "azul";
                     break;
                 case "G":
-                    materia.letra = "G";
+                    letraFiltro = "G";
                     colorHorario = "azul";
                     break;
                 case "H":
-                    materia.letra = "I";
+                    letraFiltro = "I";
                     colorHorario = "azul";
                     break;
                 case "I":
-                    materia.letra = "H (o B los miercoles)";
+                    letraFiltro = "H"; // H (o B los miercoles)
                     colorHorario = "azul";
                     break;
                 default:
@@ -44,41 +44,41 @@ export const aguamarina = (materia, colorHorario) => {
             }
             break;
         case "azul":
-            switch (materia.letra) {
+            switch (letraFiltro) {
                 case "A":
-                    materia.letra = "E (o H los lunes)";
+                    letraFiltro = "E"; //E (o H los lunes)
                     colorHorario = "verde";
                     break;
                 case "B":
-                    materia.letra = "C (o I los miercoles)";
+                    letraFiltro = "C"; // C (o I los miercoles)
                     colorHorario = "verde";
                     break;
                 case "C":
-                    materia.letra = "B";
+                    letraFiltro = "B";
                     colorHorario = "verde";
                     break;
                 case "D":
-                    materia.letra = "F";
+                    letraFiltro = "F";
                     colorHorario = "verde";
                     break;
                 case "E":
-                    materia.letra = "A";
+                    letraFiltro = "A";
                     colorHorario = "verde";
                     break;
                 case "F":
-                    materia.letra = "D";
+                    letraFiltro = "D";
                     colorHorario = "verde";
                     break;
                 case "G":
-                    materia.letra = "G";
+                    letraFiltro = "G";
                     colorHorario = "verde";
                     break;
                 case "H":
-                    materia.letra = "I (o B los miercoles)";
+                    letraFiltro = "I"; // I (o B los miercoles)
                     colorHorario = "verde";
                     break;
                 case "I":
-                    materia.letra = "H";
+                    letraFiltro = "H";
                     colorHorario = "verde";
                     break;
                 default:
@@ -86,41 +86,41 @@ export const aguamarina = (materia, colorHorario) => {
             }
             break;
         case "verde2":
-            switch (materia.letra) {
+            switch (letraFiltro) {
                 case "A":
-                    materia.letra = "E (o H los lunes)";
+                    letraFiltro = "E"; // E (o H los lunes)
                     colorHorario = "azul2";
                     break;
                 case "B":
-                    materia.letra = "C (o H los miercoles)";
+                    letraFiltro = "C"; // C (o H los miercoles)
                     colorHorario = "azul2";
                     break;
                 case "C":
-                    materia.letra = "B";
+                    letraFiltro = "B";
                     colorHorario = "azul2";
                     break;
                 case "D":
-                    materia.letra = "F";
+                    letraFiltro = "F";
                     colorHorario = "azul2";
                     break;
                 case "E":
-                    materia.letra = "A";
+                    letraFiltro = "A";
                     colorHorario = "azul2";
                     break;
                 case "F":
-                    materia.letra = "D";
+                    letraFiltro = "D";
                     colorHorario = "azul2";
                     break;
                 case "G":
-                    materia.letra = "G";
+                    letraFiltro = "G";
                     colorHorario = "azul2";
                     break;
                 case "H":
-                    materia.letra = "I";
+                    letraFiltro = "I";
                     colorHorario = "azul2";
                     break;
                 case "I":
-                    materia.letra = "H (o B los miercoles)";
+                    letraFiltro = "H"; // H (o B los miercoles)
                     colorHorario = "azul2";
                     break;
                 default:
@@ -128,46 +128,46 @@ export const aguamarina = (materia, colorHorario) => {
             }
             break;
         case "azul2":
-            switch (materia.letra) {
+            switch (letraFiltro) {
                 case "A":
-                    materia.letra = "E (o H los lunes)";
+                    letraFiltro = "E"; // E (o H los lunes)
                     colorHorario = "verde2";
                     break;
                 case "B":
-                    materia.letra = "C (o I los miercoles)";
+                    letraFiltro = "C"; // C (o I los miercoles)
                     colorHorario = "verde2";
                     break;
                 case "C":
-                    materia.letra = "B";
+                    letraFiltro = "B";
                     colorHorario = "verde2";
                     break;
                 case "D":
-                    materia.letra = "F";
+                    letraFiltro = "F";
                     colorHorario = "verde2";
                     break;
                 case "E":
-                    materia.letra = "A";
+                    letraFiltro = "A";
                     colorHorario = "verde2";
                     break;
                 case "F":
-                    materia.letra = "D";
+                    letraFiltro = "D";
                     colorHorario = "verde2";
                     break;
                 case "G":
-                    materia.letra = "G";
+                    letraFiltro = "G";
                     colorHorario = "verde2";
                     break;
                 case "H":
-                    materia.letra = "I (o B los miercoles)";
+                    letraFiltro = "I"; // I (o B los miercoles)
                     colorHorario = "verde2";
                     break;
                 case "I":
-                    materia.letra = "H";
+                    letraFiltro = "H";
                     colorHorario = "verde2";
                     break;
                 default:
                     return null;
             }
     }
-    return materia.letra, colorHorario;
+    return {letraFiltro, colorHorario};
 }
