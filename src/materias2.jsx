@@ -59,7 +59,7 @@ function MateriasSemestre2({ selectedColorSemester, letraFiltro, selectedGradoAc
     </>
   ) : (
     <>
-      <select className="form-select" id="inputGroupSelect01">
+      <select className="form-select" id="inputGroupSelect02">
         <option defaultValue>Elige la materia...</option>
         {materiasFiltradas.map(([id, materia]) => (
           <option key={id} value={materia.letra}>{materia.nombre}</option>
