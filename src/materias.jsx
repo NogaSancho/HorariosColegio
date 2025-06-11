@@ -61,7 +61,7 @@ function MateriasSemestre1({ selectedColorSemester, letraFiltro, selectedGradoAc
     <>
         <div className="col-sm-14">
           <div className="input-group mb-3" id={`materias-${currentLetraFiltro}s`}>
-            <label className="input-group-text" htmlFor="inputGroupSelect01">{currentLetraFiltro} style={currentColorSemester == "azul2" ? {backgroundColor: 'blue'} : {backgroundColor: 'green'}}</label>
+            <label className="input-group-text" htmlFor="inputGroupSelect01" style={currentColorSemester == "azul2" ? {backgroundColor: 'blue'} : {backgroundColor: 'green'}}>{currentLetraFiltro}</label>
             <select className="form-select" id="inputGroupSelect01">
               <option defaultValue>Elige la materia...</option>
               {materiasFiltradas.map(([id, materia]) => (
