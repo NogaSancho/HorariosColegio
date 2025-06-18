@@ -85,7 +85,7 @@ function MateriasSemestre2({
           className="input-group mb-3"
           id={`materias-${currentLetraFiltro}s`}
         >
-          <label className="input-group-text" htmlFor="inputGroupSelect02" style={currentColorSemester == "azul2" ? {backgroundColor: 'blue'} : {backgroundColor: 'green'}}>
+          <label className="input-group-text" htmlFor="inputGroupSelect02" style={currentColorSemester == "azul2" ? { backgroundColor: 'blue' } : { backgroundColor: 'green' }}>
             {currentLetraFiltro}
           </label>
           <select className="form-select" id="inputGroupSelect02">

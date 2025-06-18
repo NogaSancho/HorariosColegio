@@ -1581,7 +1581,6 @@ const materias = {
             nombre: "Historia de Colombia",
             letra: "C",
             area: "Sociales",
-            }
         }, 
         9: {
             nombre: "Introducción a Economía",
@@ -1783,6 +1782,7 @@ const materias = {
             letra: "K",
             area: "Consejería",
         },
+    },
     materias10verde1: {
         1: {
             nombre: "Funciones, Trigonometría & Probabilidad",
