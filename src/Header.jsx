@@ -7,7 +7,7 @@ function Header() {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
-                <div className="container-fluid"> <a className="navbar-brand" href="#">Nuevo Horario 🗿🗿</a>
+                <div className="container-fluid"> <a className="navbar-brand" href="#">Nuevo Horario 🗿🗿 Hecho por NogaSancho & asociados 😎</a>
                 </div>
             </nav>
         </>
