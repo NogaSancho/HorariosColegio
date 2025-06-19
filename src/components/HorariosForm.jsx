@@ -1,8 +1,10 @@
-import './Bootstrap/css/bootstrap.min.css';
-import './Bootstrap/js/bootstrap.bundle.min.js';
-import './Bootstrap/js/color-modes.js';
+import '../Bootstrap/css/bootstrap.min.css';
+import '../Bootstrap/js/bootstrap.bundle.min.js';
+import '../Bootstrap/js/color-modes.js';
+import '../styles.css'
 import MateriasSemestre1 from './materias.jsx';
 import MateriasSemestre2 from './materias2.jsx';
+import Cupos from './cupos.jsx';
 
 function HorariosForm({ selectedColorSemester1, setSelectedColorSemester1, selectedColorSemester2, setSelectedColorSemester2, selectedGradoActual, setSelectedGradoActual }) {
   console.log("Color horario semestre 1 seleccionado: " + selectedColorSemester1);
@@ -92,16 +94,16 @@ function HorariosForm({ selectedColorSemester1, setSelectedColorSemester1, selec
             </div>
             <div className="row">
               <div className="col-sm-14" id="materias-As">
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="A" selectedGradoActual={selectedGradoActual} />
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="B" selectedGradoActual={selectedGradoActual} />
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="C" selectedGradoActual={selectedGradoActual} />
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="D" selectedGradoActual={selectedGradoActual} />
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="E" selectedGradoActual={selectedGradoActual} />
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="F" selectedGradoActual={selectedGradoActual} />
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="G" selectedGradoActual={selectedGradoActual} />
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="H" selectedGradoActual={selectedGradoActual} />
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="I" selectedGradoActual={selectedGradoActual} />
-                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="J" selectedGradoActual={selectedGradoActual} />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="A" selectedGradoActual={selectedGradoActual} /> <Cupos materia="A" />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="B" selectedGradoActual={selectedGradoActual} /> <Cupos materia="B" />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="C" selectedGradoActual={selectedGradoActual} /> <Cupos materia="C" />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="D" selectedGradoActual={selectedGradoActual} /> <Cupos materia="D" />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="E" selectedGradoActual={selectedGradoActual} /> <Cupos materia="E" />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="F" selectedGradoActual={selectedGradoActual} /> <Cupos materia="F" />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="G" selectedGradoActual={selectedGradoActual} /> <Cupos materia="G" />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="H" selectedGradoActual={selectedGradoActual} /> <Cupos materia="H" />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="I" selectedGradoActual={selectedGradoActual} /> <Cupos materia="I" />
+                <MateriasSemestre1 selectedColorSemester={selectedColorSemester1} letraFiltro="J" selectedGradoActual={selectedGradoActual} /> <Cupos materia="J" />
               </div>
             </div>
           </div>
@@ -130,16 +132,16 @@ function HorariosForm({ selectedColorSemester1, setSelectedColorSemester1, selec
               </div>
             </div>
             <div className="row">
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="A" selectedGradoActual={selectedGradoActual} />
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="B" selectedGradoActual={selectedGradoActual} />
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="C" selectedGradoActual={selectedGradoActual} />
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="D" selectedGradoActual={selectedGradoActual} />
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="E" selectedGradoActual={selectedGradoActual} />
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="F" selectedGradoActual={selectedGradoActual} />
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="G" selectedGradoActual={selectedGradoActual} />
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="H" selectedGradoActual={selectedGradoActual} />
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="I" selectedGradoActual={selectedGradoActual} />
-              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="J" selectedGradoActual={selectedGradoActual} />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="A" selectedGradoActual={selectedGradoActual} /> <Cupos materia="A" />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="B" selectedGradoActual={selectedGradoActual} /> <Cupos materia="B" />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="C" selectedGradoActual={selectedGradoActual} /> <Cupos materia="C" />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="D" selectedGradoActual={selectedGradoActual} /> <Cupos materia="D" />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="E" selectedGradoActual={selectedGradoActual} /> <Cupos materia="E" />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="F" selectedGradoActual={selectedGradoActual} /> <Cupos materia="F" />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="G" selectedGradoActual={selectedGradoActual} /> <Cupos materia="G" />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="H" selectedGradoActual={selectedGradoActual} /> <Cupos materia="H" />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="I" selectedGradoActual={selectedGradoActual} /> <Cupos materia="I" />
+              <MateriasSemestre2 selectedColorSemester={selectedColorSemester2} letraFiltro="J" selectedGradoActual={selectedGradoActual} /> <Cupos materia="J" />
             </div>
           </div>
         </div>

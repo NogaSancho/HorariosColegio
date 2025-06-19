@@ -1,5 +1,5 @@
-import materias from './materias.js';
-import { aguamarina } from './aguamarina.js';
+import materias from '../materias.js';
+import { aguamarina } from '../aguamarina.js';
 import { useState, useEffect } from 'react';
 
 function MateriasSemestre1({ selectedColorSemester, letraFiltro, selectedGradoActual }) {

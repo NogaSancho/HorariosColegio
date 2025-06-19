@@ -1,7 +1,8 @@
 import React from "react";
-import './Bootstrap/css/bootstrap.min.css';
-import './Bootstrap/js/bootstrap.bundle.min.js';
-import './Bootstrap/js/color-modes.js';
+import '../Bootstrap/css/bootstrap.min.css';
+import '../Bootstrap/js/bootstrap.bundle.min.js';
+import '../Bootstrap/js/color-modes.js';
+import '../styles.css'
 
 function Footer() {
     return (
